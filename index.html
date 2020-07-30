@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4DA5F4">
+    
+    <title>Password Reset</title>
+    
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="pb-2 mt-2 mb-4 border-bottom">
+            <h3>Reset Password</h3>
+        </div>
+        <form method="POST">
+            <input type="hidden" name="_csrf" value="">
+            <div class="form-group row"><label class="col-md-3 col-form-label font-weight-bold text-right"
+                    for="password">New Password</label>
+                <div class="col-md-7"><input class="form-control" type="password" name="password" id="password"
+                        placeholder="New password" autofocus autocomplete="new-password" minlength="8" required></div>
+            </div>
+            <div class="form-group row"><label class="col-md-3 col-form-label font-weight-bold text-right"
+                    for="confirm">Confirm Password</label>
+                <div class="col-md-7"><input class="form-control" type="password" name="confirm" id="confirm"
+                        placeholder="Confirm password" autocomplete="new-password" minlength="8" required></div>
+            </div>
+            <div class="form-group offset-sm-3 col-md-7 pl-2"><button class="btn btn-primary btn-reset" type="submit"><i
+                        class="far fa-keyboard fa-sm"></i>Change Password</button></div>
+        </form>
+    </div>
+    <footer>
+        <div class="container text-center">
+            <p class="float-left">© 2020 Company, Inc. All Rights Reserved</p>
+            
+        </div>
+    </footer>
+
+</body>
+
+</html>
